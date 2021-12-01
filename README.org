@@ -1,0 +1,16 @@
+* build
+
+  Run ~make.sh~ with the approrpiate quiz number(s):
+
+  #+begin_src bash
+  ./make.sh 1 2 [...]
+  #+end_src
+
+* run
+  
+  Run it *from the project's root directory*:
+  
+  #+begin_src bash
+  out/1
+  out/2
+  #+end_src
