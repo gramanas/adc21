@@ -9,7 +9,7 @@ int main() {
   int bufferLength = 255;
   char buffer[bufferLength];
 
-  FILE * f = fopen("input/1.txt", "r");
+  FILE * f = fopen("input/day1.txt", "r");
   int i = 0;
   while(fgets(buffer, bufferLength, f)) {
     data[i++] = atoi(buffer);
