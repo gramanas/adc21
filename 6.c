@@ -70,10 +70,9 @@ int main() {
   int c = 0;
 
   FILE * f = fopen("input/day3.txt", "r");
-  int i = 0;
   while(fgets(buffer, bufferLength, f)) {
     strcpy(data[c++], buffer);
   }
 
-  printf("%d\n", find_oxygen_geneator_rating(data, c, 0) * find_CO2_scrubber_rating(data, c, 0));
+  printf("%ld\n", find_oxygen_geneator_rating(data, c, 0) * find_CO2_scrubber_rating(data, c, 0));
 }

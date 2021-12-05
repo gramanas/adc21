@@ -16,7 +16,7 @@ int main() {
   }
 
   int c = 0;
-  for (int j = 1; j < 2002; j++) {
+  for (int j = 1; j < 2000; j++) {
     if (data[j] > data[j - 1]) c++;
   }
 

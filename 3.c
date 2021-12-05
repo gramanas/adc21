@@ -11,7 +11,6 @@ int main() {
   int depth = 0;
 
   FILE * f = fopen("input/day2.txt", "r");
-  int i = 0;
   while(fgets(buffer, bufferLength, f)) {
     int n = strlen(buffer);
     if (buffer[0] == 'f') {

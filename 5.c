@@ -14,7 +14,6 @@ int main() {
   int c = 0;
 
   FILE * f = fopen("input/day3.txt", "r");
-  int i = 0;
   while(fgets(buffer, bufferLength, f)) {
     for (int j = 0; j < 12; j++) {
       if (buffer[j] == '1') {
@@ -42,5 +41,5 @@ int main() {
   long G = strtol(gamma_s, &ignore, 2);
   long E = strtol(epsilon_s, &ignore, 2);
 
-  printf("%d\n", G * E);
+  printf("%ld\n", G * E);
 }

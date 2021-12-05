@@ -65,7 +65,6 @@ int mark_number(int n) {
       }
     }
     // check if wins
-    int flag = 0;
     for (int x = 0; x < 5; x++) {
       if (sum_marked_row(boards[j].i, x) == 5 ||
           sum_marked_col(boards[j].i, x) == 5) {

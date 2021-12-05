@@ -69,7 +69,6 @@ int sum_unmarked(int board_id) {
 int mark_number(int n) {
   for (int j = 0; j < boards_n; j++) {
     if (contains(skips, j)) {
-      printf("Skipping %d\n", j);
       continue;
     }
     // mark board
@@ -90,7 +89,6 @@ int mark_number(int n) {
     }
     if (flag) {
       if (skips_n == boards_n - 1) return j;
-      printf("Adding %2d to skips\n", j);
       skips[skips_n++] = j;
     }
   }
